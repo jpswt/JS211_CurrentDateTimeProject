@@ -18,10 +18,9 @@ const displayDate = () => {
 const numberToString = (inputNumber) => {
   //Declare a varible that equals the result of inputNumber to a string
   let convertNumToString = inputNumber.toString();
-  //Logging the type of convertNumToString which equals a string
   console.log(convertNumToString, " has been converted to " + typeof (convertNumToString));
 }
-//Call the function numberToString with input of 8
+//Invoke the function numberToString with input of 8
 numberToString(8)
 
 
@@ -31,10 +30,9 @@ numberToString(8)
 const stringToNumber = (inputString) => {
   //Declare a variable of that equals the parseInt of the inputString
   let convertedNumber = parseInt(inputString);
-  //Logging the type of convertedNumber which equals a number
   console.log(convertedNumber, " has been converted to " + typeof (convertedNumber));
 }
-//call the function stringToNumber with input of 5
+//Invoke the function stringToNumber with input of 5
 stringToNumber(5)
 
 
@@ -50,7 +48,6 @@ stringToNumber(5)
 const getInputType = (input) => {
   //Declare a variable of inputType which equals the typeof input
   let inputType = typeof input
-  //Logging the type of input type which equals the type of given input
   console.log('The datetype is ' + inputType)
 
 }
@@ -71,7 +68,6 @@ getInputType(getInputType)
 const addTwoNumbers = (num1, num2) => {
   //Decalare a variable of sumOfNumbers that is the summation of num1 + num2
   let sumOfNumbers = num1 + num2
-  //Logging to the summation of num1 + num2 with variable sumOfNumbers
   console.log(`The sum of ${num1} and ${num2} is ${sumOfNumbers}.`)
 
 }
@@ -84,10 +80,10 @@ addTwoNumbers(2, 8)
 const bothEvenNumbers = (num1, num2) => {
   //Determine if both num1 and num2 are even with modulus operand equal to zero
   if ((num1 % 2 === 0) && (num2 % 2 === 0)) {
-    // Logging message that passes if both numbers are even
+    // Print message that passes if both numbers are even
     console.log(`Both ${num1} and ${num2} are even numbers.`)
   } else {
-    // Logging message if both numbers are not even
+    // Print message if both numbers are not even
     console.log(`Both ${num1} and ${num2} are not even numbers, please try again.`)
   }
 }
@@ -104,10 +100,10 @@ bothEvenNumbers(13, 11)
 const oneEvenNumber = (num1, num2) => {
   //Determine if either num1 or num2 is even with modulus operand equal to zero
   if ((num1 % 2 === 0) || (num2 % 2 === 0)) {
-    // Logging message passes if either num1 OR num2 is an even number
+    // Print message passes if either num1 OR num2 is an even number
     console.log(`Congrats. Atleast one of the numbers: ${num1} or ${num2}, is an even number.`)
   } else {
-    // Logging message passes if neither num1 OR num2 is an even number
+    // Print message passes if neither num1 OR num2 is an even number
     console.log(`Neither ${num1} or ${num2} is an even number, please try again.`)
   }
 }
@@ -126,10 +122,10 @@ oneEvenNumber(13, 11)
 const zeroEvenNumbers = (num1, num2) => {
   //Determine if neither num1 or num2 is even with modulus operand not equal to zero
   if ((num1 % 2 !== 0 && num2 % 2 !== 0)) {
-    // Logging passing message if both num1 and num2 are not even numbers
+    // Print passing message if both num1 and num2 are not even numbers
     console.log(`Congrats, niether ${num1} or ${num2} is even.`)
   } else {
-    // Logging passing message if either num1 or num2 are not even numbers
+    // Print passing message if either num1 or num2 are not even numbers
     console.log(`Either ${num1} or ${num2} is even, please try again.`)
   }
 }
